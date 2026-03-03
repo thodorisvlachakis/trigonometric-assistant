@@ -1,0 +1,172 @@
+.periodicityIdentitiesContainer{
+    padding-top: 15px;
+    width: 30%;
+    height: 370px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.propertiesContainer{
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 10px 0;
+}
+
+.propertiesTitle{
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #0b2a4a;
+    text-shadow: 0 2px 3px rgba(11, 42, 74, 0.3);
+}
+
+.trigIdsPropertiesList{
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+    /* border: solid; */
+    padding: 0;
+}
+
+.trigIdsPropertiesList li{
+    text-align: center;
+    font-size: 1.04rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 7px;
+    padding: 4px 14px;
+    /* background-color: rgb(168, 215, 255); */
+    background-color: rgba(136, 195, 248, 0.65);
+    box-shadow: 2px 3px 10px rgba(17, 17, 17, 0.678);
+    transition:
+        background-color 0.1s ease,
+        transform 0.1s ease,
+        scale 0.1s ease;
+    /* cursor:default; */
+}
+
+.trigIdsPropertiesList li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.trigIdsPropertiesList li:hover{
+    /* background-color: rgb(131, 197, 255); */
+    background-color: rgba(83, 175, 255, 0.9);
+    transform: translateY(-1px);
+    scale: 1.05;
+}
+
+.trigIdsPropertiesList li math{
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.periodicityPropertiesList{
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.unitCircleContainer img{
+    width: 470px;
+    /* height: 470px; */
+}
+
+.wideContainer{
+    width: 65%;
+    margin-top: 60px;
+}
+
+/* body .wideContainer:nth-child(3){
+    margin-top: 70px;
+} */
+
+.fundamentalTrigIdentitiesContainer{
+    /* border: solid; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundamentalTrigIdentitiesContainer .propertiesContainer:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.fundamentalTrigIdentitiesContainer .propertiesTitle{
+    transform: translateX(89px);
+}
+
+.fundamentalTrigIdentitiesContainer .trigIdsPropertiesList{
+    column-count: 3;
+    column-gap: 50px;
+    align-self: center;
+}
+
+.fundamentalTrigIdentitiesContainer .trigIdsPropertiesList li{
+    padding: 6px 45px;
+}
+
+.fundamentalTrigIdentitiesContainer .trigIdsPropertiesList li,
+.angleFormulasContainer .trigIdsPropertiesList li,
+.sumProductFormulasContainer .trigIdsPropertiesList li{
+    font-size: 1.07rem;
+}
+
+.angleFormulasContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.angleFormulasContainer .trigIdsPropertiesList{
+    margin-top: 18px;
+}
+
+.sum-diffAngleFormulasContainer .trigIdsPropertiesList li{
+    padding: 8px 45px;
+}
+
+.sum-diffAngleFormulasContainer .trigIdsPropertiesList li:not(:last-child){
+    margin-bottom: 38px;
+}
+
+.half-doubleAngleFormulasContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.half-doubleAngleFormulasContainer .trigIdsPropertiesList li{
+    padding: 8px 45px
+}
+
+.half-doubleAngleFormulasContainer .trigIdsPropertiesList li:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.sumProductFormulasContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sumProductFormulasContainer .trigIdsPropertiesList{
+    margin-top: 18px;
+}
+
+.sumProductFormulasContainer .trigIdsPropertiesList li{
+    padding: 8px 43px;
+}
+
+.sumProductFormulasContainer .trigIdsPropertiesList li:not(:last-child){
+    margin-bottom: 17px;
+}
+
+.sumProductFormulasContainer .propertiesContainer:last-child .trigIdsPropertiesList li:not(:last-child){
+    margin-bottom: 19px;
+}

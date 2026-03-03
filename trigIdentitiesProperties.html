@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometric Assistant</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/TrigonometricAssistantLogo-TransparentBG.png">
+    <link rel="stylesheet" href="./styles/trigIdentitiesProperties.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="pageHeaderContainer">
+        <h2>Trigonometric Assistant</h2>
+    </div>
+    <div class="trigTheoryUnitCircleMainContainer">
+        <div class="trigTheoryUnitCircleSectionContainer periodicityIdentitiesContainer">
+            <div class="propertiesContainer">
+                <span class="propertiesTitle">Vertically Opposite Angles</span>
+                <ul class="trigIdsPropertiesList periodicityPropertiesList">
+                    <li>sin(-θ) = -sinθ</li>
+                    <li>cos(-θ) = cosθ</li>
+                    <li>tan(-θ) = -tanθ</li>
+                    <li>cot(-θ) = -cotθ</li>
+                </ul>
+            </div>
+            <div class="propertiesContainer">
+                <span class="propertiesTitle">Supplementary Angles</span>
+                <ul class="trigIdsPropertiesList periodicityPropertiesList">
+                    <li>sin(π-θ) = sinθ</li>
+                    <li>cos(π-θ) = -cosθ</li>
+                    <li>tan(π-θ) = -tanθ</li>
+                    <li>cot(π-θ) = -cotθ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="unitCircleContainer">
+            <img src="./assets/images/UnitCircle.png" alt="UnitCircle.png">
+        </div>
+        <div class="trigTheoryUnitCircleSectionContainer periodicityIdentitiesContainer">
+            <div class="propertiesContainer">
+                <span class="propertiesTitle">Complementary Angles</span>
+                <ul class="trigIdsPropertiesList periodicityPropertiesList">
+                    <li>sin(
+                        <math>
+                            <mfrac>
+                                <mrow>
+                                    <mi>π</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        -θ) = cosθ</li>
+                    <li>cos(
+                        <math>
+                            <mfrac>
+                                <mrow>
+                                    <mi>π</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        -θ) = sinθ</li>
+                    <li>tan(
+                        <math>
+                            <mfrac>
+                                <mrow>
+                                    <mi>π</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        -θ) = cotθ</li>
+                    <li>cot(
+                        <math>
+                            <mfrac>
+                                <mrow>
+                                    <mi>π</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        -θ) = tanθ</li>
+                </ul>
+            </div>
+            <div class="propertiesContainer">
+                <span class="propertiesTitle">Angles that differ by π [rad]</span>
+                <ul class="trigIdsPropertiesList periodicityPropertiesList">
+                    <li>sin(π+θ) = -sinθ</li>
+                    <li>cos(π+θ) = -cosθ</li>
+                    <li>tan(π+θ) = tanθ</li>
+                    <li>cot(π+θ) = cotθ</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="trigIdsPropertiesContainer wideContainer">
+    <!-- <div class="trigTheorySectionContainer" id="fundamentalTrigIdentities"> -->
+        <div class="headerPropertiesContainer">
+            <h4 class="headerOfContainer">Fundamental Trigonometric Identities</h4>
+        </div>
+        <!-- <span class="">Fundamental Trigonometric Identities</span> -->
+        <div class="fundamentalTrigIdentitiesContainer">
+            <div class="propertiesContainer">
+                <span class="propertiesTitle">Pythagorean</span>
+                <ul class="trigIdsPropertiesList">
+                    <li>
+                        sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1
+                    </li>
+                    <li>
+                        1 + tan<sup>2</sup>θ = sec<sup>2</sup>θ
+                    </li>
+                    <li>
+                        1 + cot<sup>2</sup>θ = csc<sup>2</sup>θ
+                    </li>
+                </ul>
+            </div>
+            <div class="propertiesContainer">
+                <span class="propertiesTitle">Reciprocal Identities</span>
+                <ul class="trigIdsPropertiesList">
+                    <li>
+                        tanθ = 
+                        <math>
+                            <mfrac>
+                                <mrow>
+                                    <mi>sinθ</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>cosθ</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                        = 
+                        <math>
+                            <mfrac>
+                                <mrow>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mrow>
+                                    <mi>cotθ</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li>
+                        secθ = 
+                        <math>
+                            <mfrac>
+                                <mrow>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mrow>
+                                    <mi>cosθ</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                    <li>
+                        cscθ = 
+                        <math>
+                            <mfrac>
+                                <mrow>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mrow>
+                                    <mi>sinθ</mi>
+                                </mrow>
+                            </mfrac>
+                        </math>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trigIdsPropertiesContainer wideContainer">
+        <div class="headerPropertiesContainer">
+            <h4 class="headerOfContainer">Angle Formulas</h4>
+        </div>
+        <div class="angleFormulasContainer">
+            <div class="sum-diffAngleFormulasContainer">
+                <div class="propertiesContainer">
+                    <span class="propertiesTitle">Angle Sum - Difference Formulas</span>
+                    <ul class="trigIdsPropertiesList">
+                        <li>
+                            sin(a+b) = sin(a) cos(b) + cos(a) sin(b)
+                        </li>
+                        <li>
+                            sin(a-b) = sin(a) cos(b) - cos(a) sin(b)
+                        </li>
+                        <li>
+                            cos(a+b) = cos(a) cos(b) - sin(a) sin(b)
+                        </li>
+                        <li>
+                            cos(a-b) = cos(a) cos(b) + sib(a) sin(b)
+                        </li>
+                        <li>
+                            tan(a+b) = 
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>tan(a)</mi>&nbsp;
+                                        <mo>+</mo>&nbsp;
+                                        <mi>tan(b)</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>1</mn>&nbsp;
+                                        <mo>-</mo>&nbsp;
+                                        <mi>tan(a)</mi>&nbsp;
+                                        <mi>tan(b)</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>
+                        </li>
+                        <li>
+                            tan(a-b) = 
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>tan(a)</mi>&nbsp;
+                                        <mo>-</mo>&nbsp;
+                                        <mi>tan(b)</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>1</mn>&nbsp;
+                                        <mo>+</mo>&nbsp;
+                                        <mi>tan(a)</mi>&nbsp;
+                                        <mi>tan(b)</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="half-doubleAngleFormulasContainer">
+                <div class="propertiesContainer">
+                    <span class="propertiesTitle">Double-Angle Formulas</span>
+                    <ul class="trigIdsPropertiesList">
+                        <li>
+                            sin(2θ) = 2 sinθ cosθ = 
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>2</mn>&nbsp;
+                                        <mi>tanθ</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>1</mn>&nbsp;
+                                        <mo>+</mo> &nbsp;
+                                        <msup>
+                                            <mi>tan</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mi>θ</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>    
+                        </li>
+                        <li>
+                            cos(2θ) = 2 cos<sup>2</sup>θ - 1 = 1 - 2 sin<sup>2</sup>θ    
+                        </li>
+                        <li>
+                            tan(2θ) = 
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>2</mn>&nbsp;
+                                        <mi>tanθ</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>1</mn>&nbsp;
+                                        <mo>-</mo>&nbsp;
+                                        <msup>
+                                            <mi>tan</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mi>θ</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="propertiesContainer">
+                    <span class="propertiesTitle">Half-Angle Formulas</span>
+                    <ul class="trigIdsPropertiesList">
+                        <li>
+                            sin(
+                                <math>
+                                    <mfrac>
+                                        <mrow><mi>θ</mi></mrow>
+                                        <mrow><mn>2</mn></mrow>
+                                    </mfrac>
+                                </math>
+                            ) = &PlusMinus;
+                            <math>
+                                <msqrt>
+                                    <mfrac>
+                                        <mrow>
+                                            <mn>1</mn>&nbsp;
+                                            <mo>-</mo>&nbsp;
+                                            <mi>cosθ</mi>
+                                        </mrow>
+                                        <mrow><mn>2</mn></mrow>
+                                    </mfrac>
+                                </msqrt>
+                            </math>
+                        </li>
+                        <li>
+                            cos(
+                                <math>
+                                    <mfrac>
+                                        <mrow><mi>θ</mi></mrow>
+                                        <mrow><mn>2</mn></mrow>
+                                    </mfrac>
+                                </math>
+                            ) = &PlusMinus;
+                            <math>
+                                <msqrt>
+                                    <mfrac>
+                                        <mrow>
+                                            <mn>1</mn>&nbsp;
+                                            <mo>+</mo>&nbsp;
+                                            <mi>cosθ</mi>
+                                        </mrow>
+                                        <mrow><mn>2</mn></mrow>
+                                    </mfrac>
+                                </msqrt>
+                            </math>
+                        </li>
+                        <li>
+                            tan(
+                                <math>
+                                    <mfrac>
+                                        <mrow><mi>θ</mi></mrow>
+                                        <mrow><mn>2</mn></mrow>
+                                    </mfrac>
+                                </math>
+                            ) = 
+                            <math>
+                                <mfrac>
+                                    <mrow><mi>sinθ</mi></mrow>
+                                    <mrow>
+                                        <mn>1</mn>&nbsp;
+                                        <mo>+</mo>&nbsp;
+                                        <mi>cosθ</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>    
+    <div class="trigIdsPropertiesContainer wideContainer">
+        <div class="headerPropertiesContainer">
+            <h4 class="headerOfContainer">Sum - Product Formulas</h4>
+        </div>
+        <div class="sumProductFormulasContainer">
+            <div class="propertiesContainer">
+                <span class="propertiesTitle">Sum To Product Formulas</span>
+                <ul class="trigIdsPropertiesList">
+                    <li>
+                        sin(a) + sin(b) = 2 sin(
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>&nbsp;
+                                        <mo>+</mo>&nbsp;
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mrow><mn>2</mn></mrow>
+                                </mfrac>
+                            </math>
+                        ) cos(
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>&nbsp;
+                                        <mo>-</mo>&nbsp;
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mrow><mn>2</mn></mrow>
+                                </mfrac>
+                            </math>
+                        )
+                    </li>
+                    <li>
+                        sin(a) - sin(b) = 2 cos(
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>&nbsp;
+                                        <mo>+</mo>&nbsp;
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mrow><mn>2</mn></mrow>
+                                </mfrac>
+                            </math>
+                        ) sin(
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>&nbsp;
+                                        <mo>-</mo>&nbsp;
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mrow><mn>2</mn></mrow>
+                                </mfrac>
+                            </math>
+                        )
+                    </li>
+                    <li>
+                        cos(a) + cos(b) = 2 cos(
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>&nbsp;
+                                        <mo>+</mo>&nbsp;
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mrow><mn>2</mn></mrow>
+                                </mfrac>
+                            </math>
+                        ) cos(
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>&nbsp;
+                                        <mo>-</mo>&nbsp;
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mrow><mn>2</mn></mrow>
+                                </mfrac>
+                            </math>
+                        )
+                    </li>
+                    <li>
+                        cos(a) - cos(b) = -2 sin(
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>&nbsp;
+                                        <mo>+</mo>&nbsp;
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mrow><mn>2</mn></mrow>
+                                </mfrac>
+                            </math>
+                        ) sin(
+                            <math>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>a</mi>&nbsp;
+                                        <mo>-</mo>&nbsp;
+                                        <mi>b</mi>
+                                    </mrow>
+                                    <mrow><mn>2</mn></mrow>
+                                </mfrac>
+                            </math>
+                        )
+                    </li>
+                </ul>
+            </div>
+            <div class="propertiesContainer">
+                <span class="propertiesTitle">Product To Sum Formulas</span>
+                <ul class="trigIdsPropertiesList">
+                    <li>
+                        sin(a) cos(b) = <math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math> [sin(a + b) + sin(a - b)]
+                    </li>
+                    <li>
+                        cos(a) sin(b) = <math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math> [sin(a + b) - sin(a - b)]
+                    </li>
+                    <li>
+                        cos(a) cos(b) = <math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math> [cos(a + b) + cos(a - b)]
+                    </li>
+                    <li>
+                        sin(a) sin(b) = <math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math> [cos(a - b) - cos(a + b)]
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navigateToPageBtnContainer">
+        <a href="index.html" alt="goToConverter-Calculator">
+            <img src="./assets/icons/TrigonometricAssistantLogo.png" alt="TrigonometricAssistantLogo">
+            <span>Angle Converter / &nbsp;Trigonometric Calculator</span>
+        </a>
+    </div>
+</body>
+</html>

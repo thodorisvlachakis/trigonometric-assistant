@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometric Assistant</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/TrigonometricAssistantLogo-TransparentBG.png">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="pageHeaderContainer">
+        <h2>Trigonometric Assistant</h2>
+    </div>
+    <div class="deg2radConverterMainContainer">
+        <div class="headerConverterContainer">
+            <h4 class="headerOfContainer" id="headerOfConverter">Degree To Radians Converter</h4>
+        </div>
+        <div class="angleConverterContainer" id="angleConverterContainer">
+            <div class="inputContainer">
+                <input type="text" class="angleInput" id="angleConverterInput" name="angleInput" placeholder="Insert angle" autocomplete="off">
+                <!-- <span class="unit" id="angleInputUnitLabel">[rad]</span> -->
+                <span class="unit" id="angleInputUnitLabel">[°]</span>
+                <!-- <label for="deg2radInput" id="deg2radInputLabel">[°]</label> -->
+            </div>
+            <button type="button" id="swapBtn">⇄</button>
+            <div class="resultContainer">
+                <output for="angleInput" class="calculationResult" id="angleResult">Result</output>
+                <!-- <span class="unit" id="angleResultUnitLabel">[°]</span> -->
+                <span class="unit" id="angleResultUnitLabel">[rad]</span>
+            </div>
+        </div>
+        <div class="convertBtnContainer" id="convertBtnContainer">
+            <button type="button" class="getResultsBtn" id="convertBtn">Convert</button>
+        </div>
+    </div>
+    <div class="trigFuncMainContainer">
+        <div class="trigCalculationsContainer">
+            <div class="headerCalculationsContainer">
+                <h4 class="headerOfContainer">Trigonometric Functions</h4>
+            </div>
+            <div class="calculationsMainContainer">
+                <div class="angleInputSetupContainer">
+                    <div class="inputContainer">
+                        <input type="text" class="angleInput" id="angleInputTrigFunc" name="angleInputTrigFunc" placeholder="Insert angle" autocomplete="off">
+                        <span class="unit" id="angleInputTrigFuncUnitLabel">[°]</span>
+                    </div>
+                    <button type="button" class="switchAngleUnitBtn" aria-pressed="false" id="switchAngleUnitBtn">
+                        <span class="unitLabelToggleBtn radUnitLabel">rad</span>
+                        <span class="unitLabelToggleBtn degUnitLabel">deg</span>
+                        <span class="slidingField"></span>
+                    </button>
+                </div>
+                <div class="trigCalculatorResultsContainer">
+                    <div class="resultContainer trigFuncResultContainer">
+                        <span class="trigFuncLabel trigFuncLabelModified">Sin:</span>
+                        <output for="angleInputTrigFunc" class="calculationResult resultTrigFunc" id="sin">Result</output>
+                    </div>
+                    <div class="resultContainer trigFuncResultContainer">
+                        <span class="trigFuncLabel">Cos:</span>
+                        <output for="angleInputTrigFunc" class="calculationResult resultTrigFunc" id="cos">Result</output>
+                    </div>
+                    <div class="resultContainer trigFuncResultContainer">
+                        <span class="trigFuncLabel">Tan:</span>
+                        <output for="angleInputTrigFunc" class="calculationResult resultTrigFunc" id="tan">Result</output>
+                    </div>
+                    <div class="resultContainer trigFuncResultContainer">
+                        <span class="trigFuncLabel trigFuncLabelModified">Cot:</span>
+                        <output for="angleInputTrigFunc" class="calculationResult resultTrigFunc" id="cot">Result</output>
+                    </div>
+                </div>
+                <div class="calculateBtnContainer">
+                    <button type="button" class="getResultsBtn" id="calculateTrigFuncBtn">Calculate</button>
+                </div>
+            </div>
+        </div>
+        <div class="trigCalculationsContainer">
+            <div class="headerCalculationsContainer">
+                <h4 class="headerOfContainer">Basic Trigonometric Ratios</h4>
+            </div>
+            <div class="calculationsMainContainer">
+                <table class="trigonometricTable" id="trigonometricTable">
+                    <tr>
+                        <th id="specialCell">
+                            <div class="trigTableLabelContainer">
+                                <span class="s1">func</span>
+                                <div class="rotatedDiv"></div>
+                                <span class="s2">rad</span>
+                            </div>
+                        </th>
+                        <th class="tableTrigHeader">sin</th>
+                        <th class="tableTrigHeader">cos</th>
+                        <th class="tableTrigHeader">tan</th>
+                        <th class="tableTrigHeader">cot</th>
+                    </tr>
+                    <tr>
+                        <th class="tableTrigHeader tableRowHeader">0</th>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>&infin;</td>
+                    </tr>
+                    <tr>
+                        <th class="tableTrigHeader tableRowHeader">
+                            <sup>&pi;</sup>&frasl;<sub>6</sub>
+                        </th>
+                        <td>
+                            <sup>1</sup>&frasl;<sub>2</sub>
+                        </td>
+                        <td>
+                            <sup>&radic;3</sup>&frasl;<sub>2</sub>
+                        </td>
+                        <td>
+                            <sup>&radic;3</sup>&frasl;<sub>3</sub>
+                        </td>
+                        <td>&radic;3</td>
+                    </tr>
+                    <tr>
+                        <th class="tableTrigHeader tableRowHeader">
+                            <sup>&pi;</sup>&frasl;<sub>4</sub>
+                        </th>
+                        <td>
+                            <sup>&radic;2</sup>&frasl;<sub>2</sub>
+                        </td>
+                        <td>
+                            <sup>&radic;2</sup>&frasl;<sub>2</sub>
+                        </td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th class="tableTrigHeader tableRowHeader">
+                            <sup>&pi;</sup>&frasl;<sub>3</sub>
+                        </th>
+                        <td>
+                            <sup>&radic;3</sup>&frasl;<sub>2</sub>
+                        </td>
+                        <td>
+                            <sup>1</sup>&frasl;<sub>2</sub>
+                        </td>
+                        <td>&radic;3</td>
+                        <td>
+                            <sup>&radic;3</sup>&frasl;<sub>3</sub>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="tableTrigHeader tableRowHeader">
+                            <sup>&pi;</sup>&frasl;<sub>2</sub>
+                        </th>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>&infin;</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th class="tableTrigHeader tableRowHeader">&pi;</th>
+                        <td>0</td>
+                        <td>-1</td>
+                        <td>0</td>
+                        <td>&infin;</td>
+                    </tr>
+                    <tr>
+                        <th class="tableTrigHeader tableRowHeader">
+                            <sup>3&pi;</sup>&frasl;<sub>2</sub>
+                        </th>
+                        <td>-1</td>
+                        <td>0</td>
+                        <td>&infin;</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="navigateToPageBtnContainer">
+        <a href="trigIdentitiesProperties.html" alt="goToTrigProperties">
+            <img src="./assets/icons/TrigonometricAssistantLogo.png" alt="TrigonometricAssistantLogo">
+            <span>Trigonometric Identities & Properties</span>
+        </a>
+    </div>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
