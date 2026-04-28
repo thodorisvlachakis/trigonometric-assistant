@@ -10,8 +10,6 @@ It provides a **trigonometry assistant tool** for users who want to:
 - View **basic trigonometric values** for common angles in a clean table.
 - Explore **theoretical properties and identities** of trigonometric functions.
 
-The project is modular and well-structured, and it can be deployed to the web (e.g., using **Netlify**) for anyone to use.
-
 ---
 
 ## Features
